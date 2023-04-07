@@ -4,24 +4,31 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Booking";
 import Product from "./pages/Product";
+import Notfound from "./pages/404";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
+import ProductDetails from "./components/ProductDetails";
+
 const App = () => {
   return (
-    <>
+    <section className="">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/product" element={<Product />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </main>
 
       <Footer />
-    </>
+    </section>
   );
 };
 

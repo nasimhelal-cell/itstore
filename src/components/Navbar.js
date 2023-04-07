@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto">
-      <nav className="flex ">
+    <div className="bg-gray-400 py-5 text-gray-50">
+      <nav className="flex container mx-auto">
         <div>
           <Link to="/">ITB</Link>
         </div>
