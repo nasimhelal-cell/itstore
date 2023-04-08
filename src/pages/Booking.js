@@ -6,7 +6,7 @@ const Booking = () => {
   const [sub, setSub] = useState("");
   const [date, setDate] = useState("");
   const [tnx, setTnx] = useState("");
-  const [formData, setFormData] = useState("");
+  const [formData, setFormData] = useState(""); //form data are saved here
 
   function handleSubmit(e) {
     e.preventDefault();

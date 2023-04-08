@@ -7,17 +7,19 @@ const Products = () => {
   const [filterProducts, setFilterProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [err, setErr] = useState(null);
-  const [categories, setCategories] = useState([
+
+  const [catPath, setCatPath] = useState("all categories");
+
+  const para = useRef(null);
+
+  const categories = [
     "smartphone",
     "laptop",
     "smartwatch",
     "earbuds",
     "Keyboard",
     "graphics card",
-  ]);
-  const [catPath, setCatPath] = useState("all categories");
-
-  const para = useRef(null);
+  ];
 
   useEffect(() => {
     const getData = async () => {
