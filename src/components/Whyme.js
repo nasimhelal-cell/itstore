@@ -12,8 +12,8 @@ const Whyme = () => {
         <h2 className="text-4xl py-14 text-center font-semibold text-gray-700">
           Why Choose Us
         </h2>
-        <div className="grid grid-cols-4 gap-5 justify-between">
-          <div className="text-center flex flex-col gap-3">
+        <div className="grid grid-cols-4 gap-10 justify-between">
+          <div className="text-center  flex flex-col gap-3 bg-gray-100 py-10 px-4">
             <div className="flex justify-center">
               <FaGlobe className="text-7xl text-gray-700" />
             </div>
@@ -25,7 +25,7 @@ const Whyme = () => {
               customers all over the world.
             </p>
           </div>
-          <div className="text-center flex flex-col gap-3">
+          <div className="text-center flex flex-col gap-3 bg-gray-100 py-10 px-4">
             <div className="flex justify-center">
               <FaCertificate className="text-7xl text-gray-700" />
             </div>
@@ -35,7 +35,7 @@ const Whyme = () => {
               products.
             </p>
           </div>
-          <div className="text-center flex flex-col gap-3">
+          <div className="text-center flex flex-col gap-3 bg-gray-100 py-10 px-4">
             <div className="flex justify-center">
               <FaPercentage className="text-7xl text-gray-700" />
             </div>
@@ -45,7 +45,7 @@ const Whyme = () => {
               customers.
             </p>
           </div>
-          <div className="text-center flex flex-col gap-3">
+          <div className="text-center flex flex-col gap-3 bg-gray-100 py-10 px-4">
             <div className="flex justify-center">
               <FaShieldAlt className="text-7xl text-gray-700" />
             </div>

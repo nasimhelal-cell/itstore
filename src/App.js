@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import ProductDetails from "./components/ProductDetails";
+import Cart from "./pages/Cart";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/:id" element={<ProductDetails />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </main>
