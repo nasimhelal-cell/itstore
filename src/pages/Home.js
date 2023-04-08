@@ -1,3 +1,4 @@
+import Consultation from "../components/Consultation";
 import FeatureProducts from "../components/FeatureProducts";
 import Offers from "../components/Offers";
 import Slider from "../components/Slider";
@@ -8,6 +9,7 @@ const Home = () => {
     <div className="home">
       <Slider />
       <FeatureProducts />
+      <Consultation />
       <Offers />
       <Whyme />
     </div>

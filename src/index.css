@@ -28,6 +28,16 @@
     z-index: -1;
 }
 
+.consultation {
+    background-image: url("https://img.freepik.com/premium-vector/consultant-manager-sitting-her-computer-talking-with-client-call-center_530733-2767.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+
+    position: relative;
+    z-index: 0;
+}
+
 .slider {
     height: calc(100vh - 5rem);
     width: 500vw;
@@ -42,15 +52,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
-.slide:after, .offer:after, .herobg:after {
+.slide:after, .offer:after, .herobg:after, .consultation:after {
     position: absolute;
     content: '';
     inset: 0;
     background-color: rgba(0, 0, 0, .7);
-    z-index: -1;
+    z-index: -9999999;
 }
 
 /* slide cta  */

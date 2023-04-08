@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Offers = () => {
+  const navigate = useNavigate();
   return (
     <section className="offer flex flex-col  justify-center items-center h-[30rem] pb-20">
       <div className="flex container mx-auto flex-col gap-5 justify-center w-[90%] ">
@@ -12,8 +15,9 @@ const Offers = () => {
           It is a limited-time promotion that provides customers with an
           exclusive discount or unique product bundle
         </p>
-        <div>
-          <button className="text-sky-400 px-2 py-1 border border-sky-400 rounded-sm hover:bg-sky-400 hover:text-sky-50 duration-300">
+
+        <div onClick={() => navigate("product")}>
+          <button className="text-gray-50 border rounded-full border-sky-500 px-10 bg-sky-500 py-2">
             Shop Now
           </button>
         </div>
