@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.active {
+    color: rgb(56 189 248);
+
+}
+
+.herobg {
+    background-image: url("https://images.unsplash.com/photo-1622037022824-0c71d511ef3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.offer {
+    background-image: url("https://plus.unsplash.com/premium_photo-1663054524168-60a30950acb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+.slider {
+    height: calc(100vh - 5rem);
+    width: 500vw;
+    display: flex;
+    transition: 1s ease;
+}
+
+.slide {
+    width: 100vw;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.slide:after, .offer:after, .herobg:after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+/* slide cta  */
+.slide-cta {
+    position: relative;
+    z-index: 0;
+
+}

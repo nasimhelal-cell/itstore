@@ -1,27 +1,29 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-400 py-5 text-gray-50">
-      <nav className="flex container mx-auto">
+    <div className="shadow-lg backdrop-blur-lg py-5 text-gray-900 bg-gray-50">
+      <nav className="flex items-center container mx-auto">
         <div>
-          <Link to="/">ITB</Link>
+          <Link to="/" className="font-bold text-7xl">
+            ITS
+          </Link>
         </div>
         <ul className="list-none flex justify-center ml-auto gap-5">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <Link to="/product">Product</Link>
+            <NavLink to="/product">Product</NavLink>
           </li>
           <li>
-            <Link to="/booking">Booking</Link>
+            <NavLink to="/booking">Booking</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </nav>

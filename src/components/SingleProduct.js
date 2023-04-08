@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const SingleProduct = ({ product }) => {
   const { img, title, brand, price } = product;
   return (
-    <div className="single-product flex flex-col gap-3 bg-slate-50 hover:shadow-lg duration-300 px-4 py-7 rounded-sm overflow-hidden">
+    <div className="single-product flex flex-col bg-gray-50 gap-3 shadow-md hover:shadow-xl hover:scale-105 duration-300 px-4 py-7 rounded-sm overflow-hidden">
       <div className="flex justify-center">
         <img
           className="w-72 h-48 object-contain hover:scale-110 duration-500"
@@ -30,14 +30,15 @@ const SingleProduct = ({ product }) => {
         <Link
           to={title}
           state={product}
-          className="hover:text-rose-500 duration-300 flex justify-between items-center"
+          className="hover:text-rose-50 text-gray-900 duration-300 flex justify-between items-center"
         >
-          <span className="underline underline-offset-4">More Info</span>
-          <span className="text-rose-500 text-xl ">&rarr;</span>
+          <button className="text-sky-400 px-2 py-1 border border-sky-400 rounded-md hover:bg-sky-400 hover:text-sky-50 duration-300">
+            More Info
+          </button>
         </Link>
         <button
           onClick={() => console.log("ksk")}
-          className="bg-sky-500 text-sky-100 px-2 py-1 rounded-sm"
+          className="bg-sky-400 text-sky-50 hover:bg-sky-50 hover:text-sky-400 duration-300 border border-sky-400 px-2 py-1 rounded-md"
         >
           add to cart
         </button>

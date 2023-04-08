@@ -1,5 +1,10 @@
+import Herotext from "../components/Herotext";
 const Contact = () => {
-  return <div>Contact page</div>;
+  return (
+    <section>
+      <Herotext textt="Contact us" />
+    </section>
+  );
 };
 
 export default Contact;
