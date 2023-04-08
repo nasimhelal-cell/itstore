@@ -4,7 +4,7 @@ const Consultation = () => {
   const navigate = useNavigate();
   return (
     <section className="consultation flex items-center   py-10 h-[20rem] ">
-      <div className="w-[70%] mx-auto flex justify-evenly items-center">
+      <div className="w-[90%] mx-auto flex justify-evenly items-center">
         <div className="flex container text-gray-50 flex-col  gap-4  ">
           <h1 className="text-4xl w-[80%] ">
             Are you confused,which product is suitable for you ?

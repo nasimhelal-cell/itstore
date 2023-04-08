@@ -1,22 +1,26 @@
 import { useState } from "react";
 import Herotext from "../components/Herotext";
+import BestSelling from "../components/BestSelling";
 
 const Booking = () => {
   const [sub, setSub] = useState("");
   const [date, setDate] = useState("");
   const [tnx, setTnx] = useState("");
+  const [formData, setFormData] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
     setTnx("Thanks for booking!");
+    setFormData(<p>{sub + " " + date}</p>);
   }
   return (
     <section className="">
       <Herotext textt="Booking" />
-      <div className="h-[10rem] flex items-center justify-center">
+      <div className="h-[10rem] flex items-center justify-center shadow-md">
         <form onSubmit={handleSubmit} className="flex gap-10 items-center">
           <div className="flex gap-10">
             <input
+              required
               className="border px-5 py-1"
               type="text"
               placeholder="Subject?"
@@ -24,6 +28,7 @@ const Booking = () => {
               onChange={(e) => setSub(e.target.value)}
             />
             <input
+              required
               className="border px-5 py-1"
               type="date"
               placeholder="Date"
@@ -40,6 +45,7 @@ const Booking = () => {
         </form>
       </div>
       <p className="text-center text-green-500 pb-10">{tnx}</p>
+      <BestSelling />
     </section>
   );
 };

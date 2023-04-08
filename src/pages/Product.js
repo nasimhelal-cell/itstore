@@ -87,7 +87,8 @@ const Products = () => {
         </div>
         <div>
           <p className="text-gray-500 pb-4">
-            {<Link to="/">Home</Link>}/{catPath}
+            {<Link to="/">Home </Link>}/
+            <span className="text-sky-400 px-1">{catPath}</span>
           </p>
           <div className="grid grid-cols-3 gap-10 ">
             {filterProducts &&
