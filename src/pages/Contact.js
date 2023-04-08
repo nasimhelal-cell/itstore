@@ -38,9 +38,12 @@ const Contact = () => {
                     {cause.title}
                   </h3>
                   <p className="text-lg text-gray-700">{cause.desc}</p>
-                  <h5 className="text-sky-500 font-semibold text-xl">
+                  <a
+                    href={`tel:${cause.phn}`}
+                    className="text-sky-500 font-semibold text-xl"
+                  >
                     {cause.phn}
-                  </h5>
+                  </a>
                 </div>
               );
             })}
