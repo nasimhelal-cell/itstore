@@ -44,7 +44,7 @@ const ProductDetails = () => {
             onClick={() => console.log("ksk")}
             className="bg-sky-500 text-sky-50 px-2 py-1 mt-4"
           >
-            add to cart
+            Add to cart
           </button>
         </div>
       </div>

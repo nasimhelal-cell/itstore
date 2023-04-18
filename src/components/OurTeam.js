@@ -1,11 +1,17 @@
+import anubhav from '../components/assets/images/anubhav.jpg'
+
 const OurTeam = () => {
   const teamMenbers = [
+
     {
-      name: "Harvey Spector",
-      designation: "Founder - CEO",
-      img: "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/team2-free-img.png",
+      name: "Anubhav Pratap Singh",
+      designation: "Team Lead",
+      img: anubhav,
+      
     },
+
     {
+      
       name: "Jessica Pearson",
       designation: "COO",
       img: "https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/team1-free-img.png",

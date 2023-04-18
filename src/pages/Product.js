@@ -8,7 +8,7 @@ const Products = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [err, setErr] = useState(null);
 
-  const [catPath, setCatPath] = useState("all categories");
+  const [catPath, setCatPath] = useState("All categories");
 
   const para = useRef(null);
 
@@ -64,7 +64,7 @@ const Products = () => {
             className="select-none cursor-pointer flex justify-between"
             onClick={() => {
               setFilterProducts(products);
-              setCatPath("all categories");
+              setCatPath("All categories");
             }}
           >
             <span className="font-semibold">All Categories</span>

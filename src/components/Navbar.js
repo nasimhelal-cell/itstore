@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav className="flex items-center container mx-auto">
         <div>
           <Link to="/" className="text-gray-700 italic text-7xl">
-            ITS
+            
           </Link>
         </div>
         <ul className="list-none flex justify-center items-center ml-auto gap-5">
@@ -23,7 +23,7 @@ const Navbar = () => {
             <NavLink to="/booking">Booking</NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact">Contact Us</NavLink>
           </li>
           <li>
             <NavLink to="/cart">
